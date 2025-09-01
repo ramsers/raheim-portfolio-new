@@ -11,6 +11,7 @@ export default function Home() {
           <p className="text-5xl font-semibold leading-relaxed">When I’m not architecting apps, you might find me lifting weights, wandering in the wild, or interrogating a plant or bug about what it’s really up to.</p>
         </div>
       </main>
+      {/*TODO - create footer component and copy main nav - simple*/}
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
