@@ -5,7 +5,7 @@ import {ChevronRightIcon, ArrowRightIcon} from "@heroicons/react/16/solid";
 
 export default function ProjectsPage() {
     return (
-        <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-10 sm:p-20">
+        <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-10 sm:p-10">
             <main className="flex flex-col gap-[32px] w-full row-start-2 items-center sm:items-start">
                 <div className="flex flex-col gap-4">
                     <h1 className="text-5xl font-bold mb-10">Projects</h1>
@@ -20,30 +20,30 @@ export default function ProjectsPage() {
                             </p>
                         </div>
                     </div>
+                    <div className="flex flex-row gap-3 justify-center w-full">
+                        <div className="flex flex-row items-center hover:text-blue-300 hover:underline gap-1">
+                            <Link href="/projects/billdr/task-feature" className="font-semibold">
+                                Task/Todo Synchronization
+                            </Link>
+                            <ArrowRightIcon className="h-5 w-5"/>
+                        </div>
+                        <div className="flex flex-row items-center hover:text-blue-300 hover:underline gap-1">
+                            <Link href="/projects/billdr/construction-report" className="font-semibold">
+                                Construction Report
+                            </Link>
+                            <ArrowRightIcon className="h-5 w-5"/>
+                        </div>
+                    </div>
                     <Link href="/projects/billdr">
                         <Image
                             aria-hidden
                             src="/billdr_showcase.png"
                             alt="File icon"
-                            width={1000}
+                            width={1500}
                             height={1000}
                             className="rounded-md"
                         />
                     </Link>
-                </div>
-                <div className="flex flex-row gap-3">
-                    <div className="flex flex-row items-center hover:text-blue-300 hover:underline gap-1">
-                        <Link href="/projects/billdr/task-feature" className="font-semibold">
-                            Task/Todo Synchronization
-                        </Link>
-                        <ArrowRightIcon className="h-5 w-5"/>
-                    </div>
-                    <div className="flex flex-row items-center hover:text-blue-300 hover:underline gap-1">
-                        <Link href="/projects/billdr/construction-report" className="font-semibold">
-                            Construction Report
-                        </Link>
-                        <ArrowRightIcon className="h-5 w-5"/>
-                    </div>
                 </div>
             </main>
         </div>

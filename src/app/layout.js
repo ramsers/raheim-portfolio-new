@@ -2,6 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
 import Navbar from "../../components/NavBar";
+import Script from "next/script";
+
 
 
 const geistSans = Geist({
@@ -60,11 +62,25 @@ function Header() {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+    <head>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <link rel="icon" href="/logo.png" sizes="any" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/logo.png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
       <Navbar />
         <main>{children}</main>
+        <Script
+          src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+          strategy="beforeInteractive"
+        />
       </body>
     </html>
   );
