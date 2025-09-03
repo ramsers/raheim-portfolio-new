@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SliderComponent from "../../../../../components/SliderComponent";
+import BackButton from "../../../../../components/BackButton";
 
 export default function TaskFeaturePage() {
 
@@ -14,7 +15,8 @@ export default function TaskFeaturePage() {
     ];
 
     return (
-        <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-10 sm:p-10">
+        <div className="font-sans grid grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-20 gap-10 sm:p-10">
+            <BackButton />
             <main className="flex flex-col gap-[32px] w-full row-start-2 items-center sm:items-start">
                 <h1 className="text-5xl font-bold mb-10">Billdr Canada Inc.</h1>
                 <h2 className="text-3xl font-bold mb-4">
@@ -24,7 +26,9 @@ export default function TaskFeaturePage() {
                     <div className="flex flex-col gap-4">
                         <div style={{position: "relative", paddingBottom: "54.7112462006079%", height: 0}}>
                             <iframe
-                                src="https://www.loom.com/embed/993ef340e11441f296c472eb6e545fe1?sid=3bf80021-35d3-4a90-b830-72893e15a147"
+                                src={"https://www.loom.com/embed/993ef340e11441f296c472eb6e545fe1?sid=3bf80021-35d3-4a90-b830-72893e15a147" + "&hideEmbedTopBar=true" +
+                                "&hide_share=true" +
+                                "&hide_title=true"}
                                 frameBorder="0" webkitallowfullscreen mozallowfullscreen allowFullScreen
                                 style={{position: "absolute", top: 0, left: 0, width: "100%", height: "100%"}}/>
                         </div>

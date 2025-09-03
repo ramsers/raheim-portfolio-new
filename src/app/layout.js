@@ -3,6 +3,7 @@ import "./globals.css";
 import Image from "next/image";
 import Navbar from "../../components/NavBar";
 import Script from "next/script";
+import Footer from "../../components/Footer";
 
 
 
@@ -68,7 +69,7 @@ export default function RootLayout({ children }) {
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         />
         <link rel="icon" href="/logo.png" sizes="any" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="" />
         <link rel="icon" type="image/png" sizes="16x16" href="/logo.png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     </head>
@@ -77,6 +78,7 @@ export default function RootLayout({ children }) {
       >
       <Navbar />
         <main>{children}</main>
+      <Footer />
         <Script
           src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
           strategy="beforeInteractive"

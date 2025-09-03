@@ -1,8 +1,10 @@
 import Image from "next/image";
+import BackButton from "../../../components/BackButton";
 
 export default function AboutPage() {
     return (
-        <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-10 sm:p-10">
+        <div className="font-sans grid grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-20 gap-10 sm:p-10">
+            <BackButton />
             <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
                 <div className="flex flex-col gap-4">
                     <h1 className="text-5xl font-bold mb-10">About Me</h1>

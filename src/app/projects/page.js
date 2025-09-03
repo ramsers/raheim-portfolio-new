@@ -1,11 +1,19 @@
+"use client"
+
 import Image from "next/image";
 import Link from "next/link";
 import {ChevronRightIcon, ArrowRightIcon} from "@heroicons/react/16/solid";
+import BackButton from "../../../components/BackButton";
+import {Bars3Icon, XMarkIcon} from "@heroicons/react/24/outline";
+import { useRouter } from "next/navigation";
 
 
 export default function ProjectsPage() {
+    const router = useRouter();
+
     return (
-        <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-10 sm:p-10">
+        <div className="font-sans grid grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-20 gap-10 sm:p-10">
+            <BackButton />
             <main className="flex flex-col gap-[32px] w-full row-start-2 items-center sm:items-start">
                 <div className="flex flex-col gap-4">
                     <h1 className="text-5xl font-bold mb-10">Projects</h1>
@@ -21,29 +29,35 @@ export default function ProjectsPage() {
                         </div>
                     </div>
                     <div className="flex flex-row gap-3 justify-center w-full">
-                        <div className="flex flex-row items-center hover:text-blue-300 hover:underline gap-1">
-                            <Link href="/projects/billdr/task-feature" className="font-semibold">
+                        <button
+                            onClick={() => router.push("/projects/billdr/task-feature")}
+                            type="button"
+                            className="inline-flex text-[#161618] items-center p-2 w-10 h-10 justify-center text-sm
+                            rounded-lg hover:bg-gray-300 focus:outline-none w-58 bg-white font-semibold transition gap-2"
+                            aria-controls="navbar-default"
+                        >
                                 Task/Todo Synchronization
-                            </Link>
                             <ArrowRightIcon className="h-5 w-5"/>
-                        </div>
-                        <div className="flex flex-row items-center hover:text-blue-300 hover:underline gap-1">
-                            <Link href="/projects/billdr/construction-report" className="font-semibold">
-                                Construction Report
-                            </Link>
+                        </button>
+                        <button
+                            onClick={() => router.push("/projects/billdr/construction-report")}
+                            type="button"
+                            className="inline-flex text-[#161618] items-center p-2 w-10 h-10 justify-center text-sm
+                            rounded-lg hover:bg-gray-300 focus:outline-none w-58 bg-white font-semibold transition gap-2"
+                            aria-controls="navbar-default"
+                        >
+                            Construction Report
                             <ArrowRightIcon className="h-5 w-5"/>
-                        </div>
+                        </button>
                     </div>
-                    <Link href="/projects/billdr">
-                        <Image
-                            aria-hidden
-                            src="/billdr_showcase.png"
-                            alt="File icon"
-                            width={1500}
-                            height={1000}
-                            className="rounded-md"
-                        />
-                    </Link>
+                    <Image
+                        aria-hidden
+                        src="/billdr_showcase.png"
+                        alt="File icon"
+                        width={1500}
+                        height={1000}
+                        className="rounded-md"
+                    />
                 </div>
             </main>
         </div>
