@@ -45,7 +45,6 @@ export default function AboutPage() {
                             <p className="text-lg">Bootstrap CSS</p>
                         </div>
                     </div>
-                    {/* TODO here create a little image/graphic in canva with the logos of the main technologies */}
                     <Image
                         aria-hidden
                         src="/placeholder-1.jpg"

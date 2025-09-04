@@ -53,7 +53,7 @@ export default function Navbar() {
                 >
                     <ul className="font-medium flex flex-col p-4 md:p-0 mt-0 border-t border-gray-100 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent">
                         {links.map((link) => (
-                            <Link href={link.href}>
+                            <Link key={link.name} href={link.href}>
                                 <li key={link.name}  className="relative group">
                                     <button
                                         className="text-gray-900 hover:text-blue-700 px-3 py-2 rounded-sm"
@@ -67,6 +67,7 @@ export default function Navbar() {
                                                 {link.children?.map((child) => (
                                                     <li key={child.name}>
                                                         <Link
+                                                            key={child.href}
                                                             href={child.href}
                                                             className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-700"
                                                         >
