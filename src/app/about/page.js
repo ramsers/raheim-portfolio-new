@@ -9,21 +9,20 @@ export default function AboutPage() {
                 <div className="flex flex-col gap-4">
                     <h1 className="text-5xl font-bold mb-10">About Me</h1>
                     <p className="text-4xl font-semibold leading-normal">
-                        Hey there, thanks for stopping by.
+                        Hey there, thanks for stopping by!
                     </p>
                     <p className="text-4xl font-semibold leading-normal">
-                        I'm Raheim - a Fullstack Developer interested in building useful apps and features that
-                        make the day to day operations of businesses and individuals just a little bit easier.
+                        I&apos;m Raheim — a Fullstack Developer passionate about building apps and features that make
+                        everyday operations smoother for both businesses and individuals.
                     </p>
                     <p className="text-4xl font-semibold leading-normal">
-                        Previously, I worked at Billdr Canada Inc. helping to build the future
-                        of construction SaaS. While there I was fortunate to work across a myriad of languages and frameworks
-                        such as Laravel/PHP, Python/Django REST, & React. And had the pleasure of working on everything from the
-                        React Native mobile app, to the Django REST API and much more.
+                        Previously, I worked at Billdr Canada Inc., where I helped shape the future of construction SaaS.
+                        During my time there, I worked across a variety of languages and frameworks, including Laravel/PHP, Python/Django REST, and React. I had the opportunity to contribute to everything from the React Native mobile app to the Django REST API, and plenty in between.
                     </p>
 
                     <p className="text-4xl font-semibold leading-normal">
-                        I'm also an martial arts hobbyist, exercise enthusiast, and gardener.
+                        Outside of coding, I&apos;m a martial arts hobbyist, exercise enthusiast, and gardener —
+                        always exploring new ways to challenge myself and grow.
                     </p>
                 </div>
                 <div className="flex flex-col justify-around w-full mt-4 md:flex-row">
