@@ -46,18 +46,24 @@ export default function Navbar() {
           aria-controls="navbar-default"
           aria-expanded={isOpen}
         >
-          {isOpen ? <XMarkIcon className="w-6 h-6" /> : <Bars3Icon className="w-6 h-6" />}
+          {isOpen ? (
+            <XMarkIcon className="w-6 h-6" />
+          ) : (
+            <Bars3Icon className="w-6 h-6" />
+          )}
         </button>
 
         <div
-          className={`${isOpen ? "block" : "hidden"} absolute top-full left-0 w-full bg-white md:static md:block md:w-auto`}
+          className={`${
+            isOpen ? "block" : "hidden"
+          } absolute top-full left-0 w-full bg-white md:static md:block md:w-auto`}
           id="navbar-default"
         >
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-0 border-t border-gray-100 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent">
             {links.map((link) => (
               <li key={link.name} className="relative group">
                 <Link
-                  href={link.href}
+                  href={link.name === "Projects" ? "" : link.href}
                   className="block text-gray-900 hover:text-blue-700 px-3 py-2 rounded-sm"
                   onClick={() => setIsOpen(false)}
                 >

@@ -32,6 +32,19 @@ body {
   overflow: hidden;
 }
 
+/* @media (min-width: 1024px) {
+  .swiper {
+    max-width: 40% !important;
+  }
+} */
+
+@media (min-width: 1024px) {
+  .swiper {
+    width: clamp(280px, 35vw, 520px);
+    max-width: none;
+  }
+}
+
 .swiper-wrapper {
   width: 100%;
   height: 100%;
