@@ -3,14 +3,11 @@
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
-import {usePathname} from "next/navigation";
 import Link from "next/link";
 
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
-
-    const pathname = usePathname();
 
     const links = [
         { name: "Home", href: "/" },
@@ -53,33 +50,32 @@ export default function Navbar() {
                 >
                     <ul className="font-medium flex flex-col p-4 md:p-0 mt-0 border-t border-gray-100 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent">
                         {links.map((link) => (
-                            <Link key={link.name} href={link.href}>
-                                <li key={link.name}  className="relative group">
-                                    <button
-                                        className="text-gray-900 hover:text-blue-700 px-3 py-2 rounded-sm"
-                                    >
-                                        {link.name}
-                                    </button>
+                            <li key={link.name} className="relative group">
+                                <Link
+                                    href={link.href}
+                                    className="block text-gray-900 hover:text-blue-700 px-3 py-2 rounded-sm"
+                                    onClick={() => setIsOpen(false)}
+                                >
+                                    {link.name}
+                                </Link>
 
-                                    {
-                                        !!link.children && (
-                                            <ul className="absolute -left-10 top-full w-48 bg-white border rounded-lg hidden group-hover:block z-10">
-                                                {link.children?.map((child) => (
-                                                    <li key={child.name}>
-                                                        <Link
-                                                            key={child.href}
-                                                            href={child.href}
-                                                            className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-700"
-                                                        >
-                                                            {child.name}
-                                                        </Link>
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        )
-                                    }
-                                </li>
-                            </Link>
+                                {!!link.children && (
+                                    <ul className="absolute -left-10 top-full w-48 bg-white border rounded-lg hidden group-hover:block z-10">
+                                        {link.children?.map((child) => (
+                                            <li key={child.name}>
+                                                <Link
+                                                    key={child.href}
+                                                    href={child.href}
+                                                    className="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-700"
+                                                    onClick={() => setIsOpen(false)}
+                                                >
+                                                    {child.name}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
+                            </li>
                         ))}
                     </ul>
                 </div>
