@@ -5,42 +5,52 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 
-
 export default function Navbar() {
-    const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    const links = [
-        { name: "Home", href: "/" },
-        { name: "About", href: "/about" },
-        { name: "Projects", href: "/projects", children: [
-            { name: "Task Feature", href: "/projects/billdr/task-feature" },
-            { name: "Construction Reports", href: "/projects/billdr/construction-report" },
-            ], },
-    ];
+  const links = [
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about" },
+    {
+      name: "Projects",
+      href: "/projects",
+      children: [
+        {
+          name: "Reforme Pilates",
+          href: "/projects/reforme",
+        },
+        { name: "Task Feature", href: "/projects/billdr/task-feature" },
+        {
+          name: "Construction Reports",
+          href: "/projects/billdr/construction-report",
+        },
+      ],
+    },
+  ];
 
-    return (
-        <nav className="bg-white border-gray-200 relative z-50">
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-10 py-4">
-                <Link
-                    href="/"
-                    className="flex items-center space-x-3 rtl:space-x-reverse"
-                >
-                    <Image src="/logo.png" alt="Raheim Bailey" width={50} height={50} />
-                </Link>
+  return (
+    <nav className="bg-white border-gray-200 relative z-50">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-10 py-4">
+        <Link
+          href="/"
+          className="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <Image src="/logo.png" alt="Raheim Bailey" width={50} height={50} />
+        </Link>
 
-                <button
-                    onClick={() => setIsOpen(!isOpen)}
-                    type="button"
-                    className="inline-flex items-center text-black p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none"
-                    aria-controls="navbar-default"
-                    aria-expanded={isOpen}
-                >
-                    {isOpen ? (
-                        <XMarkIcon className="w-6 h-6" />
-                    ) : (
-                        <Bars3Icon className="w-6 h-6" />
-                    )}
-                </button>
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          type="button"
+          className="inline-flex items-center text-black p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden hover:bg-gray-100 focus:outline-none"
+          aria-controls="navbar-default"
+          aria-expanded={isOpen}
+        >
+          {isOpen ? (
+            <XMarkIcon className="w-6 h-6" />
+          ) : (
+            <Bars3Icon className="w-6 h-6" />
+          )}
+        </button>
 
                 <div
                     className={`${
@@ -78,8 +88,13 @@ export default function Navbar() {
                             </li>
                         ))}
                     </ul>
-                </div>
-            </div>
-        </nav>
-    );
+                  )}
+                </li>
+              </button>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
 }
