@@ -35,6 +35,22 @@ export default function ReformePilatesPage() {
 
         <div className="flex flex-row justify-between gap-8 flex-wrap lg:flex-nowrap">
           <div className="flex flex-col gap-4">
+            <div className="flex flex-col mb-4">
+              <p className="italic text-lg font-semibold">
+                For admin dashboard access use the credentials below
+              </p>
+              <p>
+                username:{" "}
+                <span className="font-bold">reforme_admin@gmail.com</span>
+              </p>
+              <p>
+                password:{" "}
+                <span className="font-bold">
+                  admin123! (Please avoid changing the admin password for others
+                  to use)
+                </span>
+              </p>
+            </div>
             <div
               style={{
                 position: "relative",
@@ -103,7 +119,8 @@ export default function ReformePilatesPage() {
 
             <ul className="list-disc list-inside ml-4 mb-4">
               <li>
-                Complex recurrence engine (weekly / monthly / yearly patterns)
+                Recurrence engine (weekly / monthly / yearly patterns - Just
+                select the time and days you want the class to occur on)
               </li>
               <li>
                 Automatic generation of future classes (parent/child
