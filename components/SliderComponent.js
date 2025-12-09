@@ -31,7 +31,7 @@ export default function SliderComponent({
   }, [images, direction]);
 
   return (
-    <div className="swiper w-full lg:max-w-[20%]!" ref={swiperRef}>
+    <div className="swiper w-full" ref={swiperRef}>
       <div className="swiper-wrapper">
         {images.map((src, idx) => (
           <div className="swiper-slide" key={idx}>

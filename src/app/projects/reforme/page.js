@@ -21,7 +21,17 @@ export default function ReformePilatesPage() {
       <BackButton />
       <main className="flex flex-col gap-[32px] w-full row-start-2 items-center sm:items-start">
         <h1 className="text-5xl font-bold mb-10">Reformé Pilates</h1>
-        <h2 className="text-3xl font-bold mb-4">Pilates Studio SaaS MVP</h2>
+        <div className="flex flex-row gap-3 items-center">
+          <h2 className="text-3xl font-bold">Pilates Studio SaaS MVP</h2>
+          <span className="text-lg font-semibold">-</span>
+          <a
+            href="https://reforme-desktop.vercel.app/"
+            className="text-3xl font-bold text-blue-400 hover:underline"
+            target="blank"
+          >
+            View Live Demo App
+          </a>
+        </div>
 
         <div className="flex flex-row justify-between gap-8 flex-wrap lg:flex-nowrap">
           <div className="flex flex-col gap-4">
@@ -34,7 +44,7 @@ export default function ReformePilatesPage() {
             >
               <iframe
                 src={
-                  "https://www.loom.com/embed/4d57a76e82ab4048b59cfa2051e36550?sid=8d9f025b-c41a-4baa-9148-35ab69d4ae42" +
+                  "https://www.loom.com/embed/eef81ad9c37d4a51bd5e551af53216ef?sid=8d9f025b-c41a-4baa-9148-35ab69d4ae42" +
                   "&hideEmbedTopBar=true" +
                   "&hide_share=true" +
                   "&hide_title=true"
@@ -66,12 +76,21 @@ export default function ReformePilatesPage() {
 
             <p className="text-lg font-semibold mb-4">
               <strong>Solution:</strong> I designed and built a fully functional
-              MVP that mirrors what a small studio would need to operate
-              day-to-day. The platform includes a client-facing site, an admin
-              dashboard, a scheduling/booking system, and Stripe-powered pass
-              purchases. I built the entire system end to end, from the UI and
-              booking experience to the backend models, recurrence logic, API
-              design, and full deployment.
+              MVP of a mini SaaS that mirrors what a small studio would need to
+              operate day-to-day. The platform includes a client-facing site, an
+              admin dashboard, a scheduling/booking system, and Stripe-powered
+              pass purchases. I built the entire system end to end — from UI and
+              booking flows to backend models, recurrence logic, API design, and
+              deployment.
+            </p>
+
+            <p className="text-lg font-semibold mb-4">
+              I also mapped out several next-phase enhancements, such as a full
+              onboarding flow for invited users (email verification + password
+              creation), automated booking reminders, subscription payment
+              failure notifications, fully fleshed out content on the marketing
+              site, as well as an instructor dashboard where they can view
+              classes assigned to them and eventually payments etc.
             </p>
 
             <p className="text-lg font-semibold mb-4">

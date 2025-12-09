@@ -23,33 +23,6 @@ export default function ConstructionReportPage() {
 
         <div className="flex flex-row justify-between gap-8 flex-wrap lg:flex-nowrap">
           <div className="flex flex-col gap-4">
-            <div
-              style={{
-                position: "relative",
-                paddingBottom: "54.7112462006079%",
-                height: 0,
-              }}
-            >
-              <iframe
-                src={
-                  "https://www.loom.com/embed/4d57a76e82ab4048b59cfa2051e36550?sid=8d9f025b-c41a-4baa-9148-35ab69d4ae42" +
-                  "&hideEmbedTopBar=true" +
-                  "&hide_share=true" +
-                  "&hide_title=true"
-                }
-                frameBorder="0"
-                webkitallowfullscreen
-                mozallowfullscreen
-                allowFullScreen
-                style={{
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "100%",
-                }}
-              />
-            </div>
             <SliderComponent images={sliderImages} />
           </div>
 
