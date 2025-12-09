@@ -46,8 +46,8 @@ export default function ReformePilatesPage() {
               <p>
                 password:{" "}
                 <span className="font-bold">
-                  admin123! (Please avoid changing the admin password for others
-                  to use)
+                  admin123! ( Please avoid changing the admin password for
+                  others to use &#9786; )
                 </span>
               </p>
             </div>
