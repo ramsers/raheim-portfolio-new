@@ -49,17 +49,6 @@ export default function TaskFeaturePage() {
                   height: "100%",
                 }}
               />
-
-              {/* <div style="position: relative; padding-bottom: 54.7112462006079%; height: 0;">
-                <iframe
-                  src="https://www.loom.com/embed/86f0bb37588647b290e0d5e71e03286d"
-                  frameborder="0"
-                  webkitallowfullscreen
-                  mozallowfullscreen
-                  allowfullscreen
-                  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-                ></iframe>
-              </div> */}
             </div>
             <SliderComponent images={sliderImages} />
           </div>
