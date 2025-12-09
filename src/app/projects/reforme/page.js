@@ -85,12 +85,12 @@ export default function ReformePilatesPage() {
             </p>
 
             <p className="text-lg font-semibold mb-4">
-              I also mapped out several next-phase enhancements, such as a full
-              onboarding flow for invited users (email verification + password
-              creation), automated booking reminders, subscription payment
-              failure notifications, fully fleshed out content on the marketing
-              site, as well as an instructor dashboard where they can view
-              classes assigned to them and eventually payments etc.
+              There are many improvements I would like to make to this app, such
+              as a full onboarding flow for created users (email verification +
+              password creation), automated booking reminders, subscription
+              payment failure notifications, fully fleshed out content on the
+              marketing site, as well as an instructor dashboard where they can
+              view classes assigned to them and eventually payments etc.
             </p>
 
             <p className="text-lg font-semibold mb-4">
