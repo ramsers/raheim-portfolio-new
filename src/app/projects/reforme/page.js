@@ -50,6 +50,9 @@ export default function ReformePilatesPage() {
                   others to use &#9786; )
                 </span>
               </p>
+              <p className="font-bold">
+                Please check you spam folder for automatic emails
+              </p>
             </div>
             <div
               style={{
