@@ -51,7 +51,7 @@ export default function ReformePilatesPage() {
                 </span>
               </p>
               <p className="font-bold">
-                Please check you spam folder for automatic emails
+                Please check your spam folder for automatic emails
               </p>
             </div>
             <div
