@@ -16,13 +16,11 @@ export default function TaskFeaturePage() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-20 gap-10 sm:p-10">
       <BackButton />
-      <main className="flex flex-col gap-[32px] w-full row-start-2 items-center sm:items-start">
-        <h1 className="text-5xl font-bold mb-10">Billdr Canada Inc.</h1>
-        <h2 className="text-3xl font-bold mb-4">
-          Feature: Schedule/Task Synchronization & UI/UX Improvements
-        </h2>
-        <div className="flex flex-row justify-between gap-8 flex-wrap lg:flex-nowrap">
-          <div className="flex flex-col gap-4">
+      <main className="flex flex-col gap-10 w-full row-start-2 items-center text-left">
+        <h1 className="text-5xl font-bold">Billdr Canada Inc.</h1>
+
+        <div className="w-full flex flex-col items-center gap-6">
+          <div className="w-full max-w-4xl">
             <div
               style={{
                 position: "relative",
@@ -47,68 +45,76 @@ export default function TaskFeaturePage() {
                   left: 0,
                   width: "100%",
                   height: "100%",
+                  borderRadius: "16px",
+                  overflow: "hidden",
                 }}
               />
             </div>
-            <SliderComponent images={sliderImages} />
           </div>
 
-          <div>
-            <p className="text-lg font-semibold mb-4">
-              <strong>Challenge:</strong> Contractors needed a reliable way to
-              synchronize schedules and task lists. Tasks should be created from
-              schedule items, and completing a task needed to automatically
-              update the related schedule item — and vice versa.
-            </p>
-
-            <p className="text-lg font-semibold mb-4">
-              <strong>Solution:</strong> Working closely with Product/Design and
-              Customer Success, I led development of a feature that allowed
-              tasks to be created not only from schedule items, but also from:
-            </p>
-
-            <ul className="list-disc list-inside text-lg font-semibold mb-4">
-              <li>Schedule Items</li>
-              <li>Quote categories/sections</li>
-              <li>Change order items</li>
-            </ul>
-
-            <p className="text-lg font-semibold mb-4">
-              This reduced duplication by letting contractors reuse existing
-              work. The schedule, task system, and employee mobile portal all
-              communicated, ensuring data fidelity — e.g., a task completed on
-              mobile would update the desktop app and its related schedule item
-              automatically.
-            </p>
-
-            <p className="text-lg font-semibold mb-4">
-              <strong>Key Enhancements:</strong>
-            </p>
-
-            <ul className="list-disc list-inside text-lg font-semibold mb-4">
-              <li>Reordering tasks and subtasks</li>
-              <li>Bulk actions: notify and delete</li>
-              <li>
-                Parent-child task interactions:
-                <ul className="list-disc list-inside ml-4 mt-1">
-                  <li>Completing a parent task completes all children</li>
-                  <li>Completing one child marks the parent as in progress</li>
-                  <li>
-                    Completing all children completes the parent automatically
-                  </li>
-                </ul>
-              </li>
-              <li>Consistent behavior across desktop and mobile apps</li>
-            </ul>
-
-            <p className="text-lg font-semibold mb-4">
-              <strong>Impact:</strong> Contractors gained a unified workflow
-              across devices, reducing redundant work and improving team
-              coordination. This led to faster task completion, fewer errors,
-              and clearer visibility into project progress for both office staff
-              and field workers.
-            </p>
+          <div className="flex flex-col items-center gap-2 text-center">
+            <h2 className="text-3xl font-bold">
+              Feature: Schedule/Task Synchronization & UI/UX Improvements
+            </h2>
           </div>
+        </div>
+
+        <div className="flex flex-col gap-6 w-full max-w-5xl items-center">
+          <p className="text-lg font-semibold w-full">
+            <strong>Challenge:</strong> Contractors needed a reliable way to
+            synchronize schedules and task lists. Tasks should be created from
+            schedule items, and completing a task needed to automatically update
+            the related schedule item — and vice versa.
+          </p>
+
+          <p className="text-lg font-semibold w-full">
+            <strong>Solution:</strong> Working closely with Product/Design and
+            Customer Success, I led development of a feature that allowed tasks to
+            be created not only from schedule items, but also from:
+          </p>
+
+          <ul className="list-disc list-inside text-lg font-semibold text-left ml-4 w-full">
+            <li>Schedule Items</li>
+            <li>Quote categories/sections</li>
+            <li>Change order items</li>
+          </ul>
+
+          <p className="text-lg font-semibold w-full">
+            This reduced duplication by letting contractors reuse existing work.
+            The schedule, task system, and employee mobile portal all
+            communicated, ensuring data fidelity — e.g., a task completed on
+            mobile would update the desktop app and its related schedule item
+            automatically.
+          </p>
+
+          <p className="text-lg font-semibold w-full">
+            <strong>Key Enhancements:</strong>
+          </p>
+
+          <ul className="list-disc list-inside text-lg font-semibold text-left ml-4 w-full">
+            <li>Reordering tasks and subtasks</li>
+            <li>Bulk actions: notify and delete</li>
+            <li>
+              Parent-child task interactions:
+              <ul className="list-disc list-inside ml-4 mt-1">
+                <li>Completing a parent task completes all children</li>
+                <li>Completing one child marks the parent as in progress</li>
+                <li>Completing all children completes the parent automatically</li>
+              </ul>
+            </li>
+            <li>Consistent behavior across desktop and mobile apps</li>
+          </ul>
+
+          <p className="text-lg font-semibold w-full">
+            <strong>Impact:</strong> Contractors gained a unified workflow across
+            devices, reducing redundant work and improving team coordination. This
+            led to faster task completion, fewer errors, and clearer visibility
+            into project progress for both office staff and field workers.
+          </p>
+        </div>
+
+        <div className="w-full max-w-5xl">
+          <SliderComponent images={sliderImages} />
         </div>
       </main>
     </div>

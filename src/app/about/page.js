@@ -35,15 +35,15 @@ export default function AboutPage() {
               </a>
             </div>
           </div>
-          <p className="text-4xl font-semibold leading-normal">
+          <p className="text-2xl font-semibold leading-normal">
             Hey there, thanks for stopping by!
           </p>
-          <p className="text-4xl font-semibold leading-normal">
+          <p className="text-2xl font-semibold leading-normal">
             I&apos;m Raheim — a Fullstack Developer passionate about building
             apps and features that make everyday operations smoother for both
             businesses and individuals.
           </p>
-          <p className="text-4xl font-semibold leading-normal">
+          <p className="text-2xl font-semibold leading-normal">
             Previously, I worked at Billdr Canada Inc., where I helped shape the
             future of construction SaaS. During my time there, I worked across a
             variety of languages and frameworks, including Laravel/PHP,
@@ -52,7 +52,7 @@ export default function AboutPage() {
             API, and plenty in between.
           </p>
 
-          <p className="text-4xl font-semibold leading-normal">
+          <p className="text-2xl font-semibold leading-normal">
             Outside of coding, I&apos;m a martial arts hobbyist, exercise
             enthusiast, and gardener — always exploring new ways to challenge
             myself and grow.
