@@ -67,18 +67,23 @@ export default function ReformePilatesPage() {
           </div>
 
           <div className="flex flex-col gap-2 text-lg font-semibold max-w-4xl">
-            <p className="italic">For admin dashboard access use the credentials below</p>
+            <p className="italic">
+              For admin dashboard access use the credentials below
+            </p>
             <p>
-              username: <span className="font-bold">reforme_admin@gmail.com</span>
+              username:{" "}
+              <span className="font-bold">reforme_admin@gmail.com</span>
             </p>
             <p>
               password:{" "}
               <span className="font-bold">
-                admin123! ( Please avoid changing the admin password for others to
-                use &#9786; )
+                admin123! ( Please avoid changing the admin password for others
+                to use &#9786; )
               </span>
             </p>
-            <p className="font-bold">Please check your spam folder for automatic emails</p>
+            <p className="font-bold">
+              Please check your spam folder for automatic emails
+            </p>
           </div>
         </div>
 
@@ -92,21 +97,22 @@ export default function ReformePilatesPage() {
           </p>
 
           <p className="text-lg font-semibold">
-            <strong>Solution:</strong> I designed and built a fully functional MVP
-            of a mini SaaS that mirrors what a small studio would need to operate
-            day-to-day. The platform includes a client-facing site, an admin
-            dashboard, a scheduling/booking system, and Stripe-powered pass
-            purchases. I built the entire system end to end — from UI and booking
-            flows to backend models, recurrence logic, API design, and deployment.
+            <strong>Solution:</strong> I designed and built a fully functional
+            MVP of a mini SaaS that mirrors what a small studio would need to
+            operate day-to-day. The platform includes a client-facing site, an
+            admin dashboard, a scheduling/booking system, and Stripe-powered
+            pass purchases. I built the entire system end to end — from UI and
+            booking flows to backend models, recurrence logic, API design, and
+            deployment.
           </p>
 
           <p className="text-lg font-semibold">
-            There are many improvements I would like to make to this app, such as a
-            full onboarding flow for created users (email verification + password
-            creation), automated booking reminders, subscription payment failure
-            notifications, fully fleshed out content on the marketing site, as well
-            as an instructor dashboard where they can view classes assigned to them
-            and eventually payments etc.
+            There are many improvements I would like to make to this app, such
+            as a full onboarding flow for created users (email verification +
+            password creation), automated booking reminders, subscription
+            payment failure notifications, fully fleshed out content on the
+            marketing site, as well as an instructor dashboard where they can
+            view classes assigned to them and eventually payments etc.
           </p>
 
           <p className="text-lg font-semibold">
@@ -119,8 +125,8 @@ export default function ReformePilatesPage() {
 
           <ul className="list-disc list-inside ml-4 text-left font-semibold text-lg">
             <li>
-              Recurrence engine (weekly / monthly / yearly patterns - Just select
-              the time and days you want the class to occur on)
+              Recurrence engine (weekly / monthly / yearly patterns - Just
+              select the time and days you want the class to occur on)
             </li>
             <li>
               Automatic generation of future classes (parent/child propagation)
