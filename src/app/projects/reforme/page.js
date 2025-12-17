@@ -19,7 +19,7 @@ export default function ReformePilatesPage() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-20 gap-10 sm:p-10">
       <BackButton />
-      <main className="flex flex-col gap-10 w-full row-start-2 items-center text-center">
+      <main className="flex flex-col gap-10 w-full row-start-2 items-center text-left">
         <h1 className="text-5xl font-bold">Reformé Pilates</h1>
 
         <div className="w-full flex flex-col items-center gap-6">
@@ -55,15 +55,17 @@ export default function ReformePilatesPage() {
             </div>
           </div>
 
-          <div className="flex flex-col items-center gap-2">
-            <h2 className="text-3xl font-bold">Pilates Studio SaaS MVP</h2>
-            <a
-              href="https://reforme-desktop.vercel.app/"
-              className="text-2xl font-bold text-blue-400 hover:underline"
-              target="blank"
-            >
-              View Live Demo App
-            </a>
+          <div className="flex flex-col items-center gap-2 text-center">
+            <h2 className="text-3xl font-bold">
+              Pilates Studio SaaS MVP -{" "}
+              <a
+                href="https://reforme-desktop.vercel.app/"
+                className="text-blue-400 hover:underline"
+                target="blank"
+              >
+                View Live Demo App
+              </a>
+            </h2>
           </div>
 
           <div className="flex flex-col gap-2 text-lg font-semibold max-w-4xl">
@@ -87,7 +89,7 @@ export default function ReformePilatesPage() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-6 w-full max-w-5xl text-center">
+        <div className="flex flex-col items-center gap-6 w-full max-w-5xl">
           <p className="text-lg font-semibold">
             <strong>Challenge:</strong> Small local and independent Pilates,
             fitness studios, & martial arts studios often rely on spreadsheets,
