@@ -85,7 +85,7 @@ export default function ReformePilatesPage() {
         </div>
 
         <div className="w-full max-w-5xl">
-          <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1.1fr_0.9fr] items-start">
+          <div className="flex flex-col gap-10 lg:grid lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
             <div className="flex flex-col gap-6 text-lg font-semibold">
               <p>
                 <strong>Challenge:</strong> Small local and independent Pilates,
