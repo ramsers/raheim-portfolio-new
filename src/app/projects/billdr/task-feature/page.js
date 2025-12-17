@@ -16,66 +16,70 @@ export default function TaskFeaturePage() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] min-h-screen p-8 pb-20 gap-10 sm:p-10">
       <BackButton />
-      <main className="flex flex-col gap-10 w-full row-start-2 items-center text-center">
+      <main className="flex flex-col gap-10 w-full row-start-2 items-center text-left">
         <h1 className="text-5xl font-bold">Billdr Canada Inc.</h1>
 
-        <div className="w-full max-w-4xl">
-          <div
-            style={{
-              position: "relative",
-              paddingBottom: "54.7112462006079%",
-              height: 0,
-            }}
-          >
-            <iframe
-              src={
-                "https://www.loom.com/embed/86f0bb37588647b290e0d5e71e03286d?sid=3bf80021-35d3-4a90-b830-72893e15a147" +
-                "&hideEmbedTopBar=true" +
-                "&hide_share=true" +
-                "&hide_title=true"
-              }
-              frameBorder="0"
-              webkitallowfullscreen
-              mozallowfullscreen
-              allowFullScreen
+        <div className="w-full flex flex-col items-center gap-6">
+          <div className="w-full max-w-4xl">
+            <div
               style={{
-                position: "absolute",
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-                borderRadius: "16px",
-                overflow: "hidden",
+                position: "relative",
+                paddingBottom: "54.7112462006079%",
+                height: 0,
               }}
-            />
+            >
+              <iframe
+                src={
+                  "https://www.loom.com/embed/86f0bb37588647b290e0d5e71e03286d?sid=3bf80021-35d3-4a90-b830-72893e15a147" +
+                  "&hideEmbedTopBar=true" +
+                  "&hide_share=true" +
+                  "&hide_title=true"
+                }
+                frameBorder="0"
+                webkitallowfullscreen
+                mozallowfullscreen
+                allowFullScreen
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                  borderRadius: "16px",
+                  overflow: "hidden",
+                }}
+              />
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center gap-2 text-center">
+            <h2 className="text-3xl font-bold">
+              Feature: Schedule/Task Synchronization & UI/UX Improvements
+            </h2>
           </div>
         </div>
 
-        <h2 className="text-3xl font-bold">
-          Feature: Schedule/Task Synchronization & UI/UX Improvements
-        </h2>
-
-        <div className="flex flex-col items-center gap-6 w-full max-w-5xl text-center">
-          <p className="text-lg font-semibold">
+        <div className="flex flex-col gap-6 w-full max-w-5xl items-center">
+          <p className="text-lg font-semibold w-full">
             <strong>Challenge:</strong> Contractors needed a reliable way to
             synchronize schedules and task lists. Tasks should be created from
             schedule items, and completing a task needed to automatically update
             the related schedule item — and vice versa.
           </p>
 
-          <p className="text-lg font-semibold">
+          <p className="text-lg font-semibold w-full">
             <strong>Solution:</strong> Working closely with Product/Design and
             Customer Success, I led development of a feature that allowed tasks to
             be created not only from schedule items, but also from:
           </p>
 
-          <ul className="list-disc list-inside text-lg font-semibold text-left ml-4">
+          <ul className="list-disc list-inside text-lg font-semibold text-left ml-4 w-full">
             <li>Schedule Items</li>
             <li>Quote categories/sections</li>
             <li>Change order items</li>
           </ul>
 
-          <p className="text-lg font-semibold">
+          <p className="text-lg font-semibold w-full">
             This reduced duplication by letting contractors reuse existing work.
             The schedule, task system, and employee mobile portal all
             communicated, ensuring data fidelity — e.g., a task completed on
@@ -83,11 +87,11 @@ export default function TaskFeaturePage() {
             automatically.
           </p>
 
-          <p className="text-lg font-semibold">
+          <p className="text-lg font-semibold w-full">
             <strong>Key Enhancements:</strong>
           </p>
 
-          <ul className="list-disc list-inside text-lg font-semibold text-left ml-4">
+          <ul className="list-disc list-inside text-lg font-semibold text-left ml-4 w-full">
             <li>Reordering tasks and subtasks</li>
             <li>Bulk actions: notify and delete</li>
             <li>
@@ -101,7 +105,7 @@ export default function TaskFeaturePage() {
             <li>Consistent behavior across desktop and mobile apps</li>
           </ul>
 
-          <p className="text-lg font-semibold">
+          <p className="text-lg font-semibold w-full">
             <strong>Impact:</strong> Contractors gained a unified workflow across
             devices, reducing redundant work and improving team coordination. This
             led to faster task completion, fewer errors, and clearer visibility
